@@ -11,6 +11,7 @@ node_modules/**/*.js
 node_modules/*.js
 app/**/*.js
 app/**/*.js.map
+
 # Executables
 *.swf
 *.air

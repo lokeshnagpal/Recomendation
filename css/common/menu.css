@@ -1,0 +1,106 @@
+.box {
+	font-size: 13px;
+    margin: 0 0 10px 0;
+    position: relative;
+    background: #fff;
+    border-radius: 0px;
+    /*border: 1px solid;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.box > h2.ui-accordion-header {
+	background: #aaaaaa;
+    /*background: #0078d7;*/
+    font-size: 18px;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 0;
+}
+
+h2.ui-state-active {
+	border: 0px;
+}
+
+.menuDetail ul.ui-accordion-content {
+	list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.menuDetail ul li:hover {
+	background: lightgray;
+}
+
+.menuDetail ul li.active {
+    background: #99cfff;
+    font-weight: bold;
+}
+
+.menuDetail ul li {
+    border: 0;
+    padding: 5px 5px 5px 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    display: block;
+    width: auto;
+    cursor: pointer;
+    /*background: #f0f8ff;*/
+}
+
+#menuBar {
+	width:auto; 
+	height: 100%;
+}
+
+#menuIconBar {
+	height: 40px; 
+	background: gray;
+}
+
+#menuIcon {
+	cursor: pointer;
+	float: right;
+}
+
+#menuIcon div.bar {
+	width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 6px;
+}
+
+#sideMenuBar {
+	width: 50px; 
+	height: 100%; 
+	display: none; 
+	background: gray;
+}
+
+#menuText {
+	top: 50%;
+    vertical-align: middle;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#menuItems {
+	overflow-y: auto; 
+	height: 100%; 
+	margin-top: 5px;
+}
+
+#loadingText {
+	margin-top: 10px;
+}

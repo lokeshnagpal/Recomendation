@@ -1,0 +1,48 @@
+{
+  "name": "mean_sample_app",
+  "version": "1.0.0",
+  "description": "",  
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",   
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+
+  "dependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "@types/es6-shim": "0.31.32",   
+    "es6-shim": "0.35.2",       
+    "livereload": "0.6.0",   
+    "reflect-metadata": "0.1.9",
+    "rxjs": "5.0.3",
+    "systemjs": "0.19.41",
+    "zone.js": "*",
+    "@types/node": "7.0.29",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "typescript": "2.3.4"  
+  },
+
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "lite-server": "2.2.2",
+    "node-gyp": "3.4.0",
+    "typescript": "2.2.2",
+    "typings": "1.4.0",
+    "@types/es6-shim": "0.31.32"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

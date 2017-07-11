@@ -1,0 +1,78 @@
+.col-48.form {
+	display: inline-block;
+	margin: 0;	
+}
+
+#intTab {
+	font-family: SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#intTab .tab-header {
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid lightblue;
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+#intTab .tab {
+	display: inline-block;
+	padding: 10px;
+	color: #808080;
+	cursor: pointer;
+}
+
+#intTab .tab:hover {
+	color: #404040;
+}
+
+#intTab .tab.active {
+	border-bottom: 3px solid #4285f4;
+	color: #4285f4;
+	font-weight: bold;
+}
+
+#intTab .tab-content {
+	display: none;
+}
+
+#intTab .tab-content.selected {
+	display: block;
+}
+
+#selfRatingTab {
+	border: 1px solid #ccc;
+}
+
+#interviewForm #tab-content-1,#interviewForm #tab-content-2 {
+	min-height: 240px;
+}
+
+.scheduleBtns button {
+	margin-left: 0px;
+}
+
+.formVal label.error {
+	color: red;
+	padding: 7px 0 0 10px;
+	font-size: 13px;
+}
+
+.form > div > input[type="text"].searchInput {
+    background-image: url(/IBPortal/images/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid #999999;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.form > div > textarea#recrComments {
+	width: 250px;
+	height: 115px;
+}
+
+#tab-control {
+	height: 80%;
+    overflow-x: auto;
+}

@@ -1,0 +1,93 @@
+#header_image {
+	background-color: #FFDF0E;
+	height: 55px;
+	width: 100%;
+}
+
+#header_logo_subtitle{
+	margin-left: 95px;
+	margin-top: 5px;
+}
+
+#syne_logo {
+	position: relative;
+	left: 90px;
+	top: 8px;
+    height: 30px;
+}
+
+.userLogo {
+	padding: 8px;
+	margin-right: 10px;
+	float: right;
+	text-decoration: none;
+	color: #414244;
+	border-radius: 25px;
+}
+
+.userLogo img {
+	width: 30px;
+	margin-top: 0px;
+}
+
+.userLogo img:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#user-menu {
+	background: white;
+	width: 300px;
+	height: 150px;
+	float: right;
+	position: relative;
+	top: 45px;
+    left: 50px;
+	z-index: 100;
+	border: 1px solid #dedede;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	-webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+}
+
+#user-menu.open {
+	opacity: 1;
+}
+
+#initial {
+    border-radius: 40px;
+    font-size: 45px;
+    background: gray;
+    color: white;
+    width: 45px;
+    padding-left: 16px;
+    margin: 0px 0px 5px 11px;
+}
+
+#user-name {
+	font-size: 24px;
+	padding: 3px 10px 0px 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#user-section {
+	border-bottom: 1px solid lightgrey;	
+    padding-top: 5px;
+}
+
+#user-role {
+	padding: 3px 10px 3px 10px;
+	font-style: italic;
+}
+
+.menu-option {
+	padding: 10px 10px 10px 25px;
+	cursor: pointer;
+}
+
+.menu-option:hover {
+	background: #f0f0f0;
+}

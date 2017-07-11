@@ -1,0 +1,21 @@
+<div  id="content" ng-cloak>
+	<div class="alert hide" id="alert">Password has been sent to your mail.</div>
+	<div class="clsMasterLogin" >
+		<form class="" enter-key-press="doLogin()">		
+			<h3>Sign In</h3>
+			<div class="loginContent">				
+				<label>User ID</label>		
+				<input type="text" class="clsLoginText" id="userId" name="userId" ng-model="user.userId" 
+					placeholder="User ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'User ID'"/>
+			</div>
+			<div class="loginContent clearfix">				
+				<label>Password</label>
+				<!-- <label class="forgotPass" ui-sref="app.forgotPassword">Forgot Password?</label>		 -->
+				<input type="password" id="password" name="password" class="clsLoginText" ng-model="user.password"
+					placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"/>
+			</div>
+			<div class="login-error" ng-show="errorText && errorText != ''">{{errorText}}</div>
+			<button type="button" id="login" class="clsloginBtn syne-primary" ng-click="doLogin()">Login</button>
+		</form>
+	</div>
+</div>

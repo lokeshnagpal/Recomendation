@@ -1,0 +1,98 @@
+#header_image {
+	background-color: #f8df2f;
+	height: 55px;
+	width: 100%;
+}
+
+#header_logo_subtitle{
+    font-family: Open Sans, "Comic Sans MS", cursive, sans-serif;
+    color: #404142;
+    margin-left: 95px;
+    margin-top: 5px;
+}
+
+#syne_logo {
+	position: relative;
+	left: 90px;
+	top: 8px;
+	height: 30px;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+.loginContent .clsLoginText {
+    display: block;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+.clsMasterLogin {
+	/*border: 1px solid #0078d7; */
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family:SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#2F2F2F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background: #FFFFFF;
+}
+
+.alert {
+    width: 367px;
+    margin: 10px auto;
+    padding: 23px;
+    font-family: SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: orange;
+    background: lightyellow;
+    border: 1px solid orange;
+}
+
+.login-error {
+	color: red;
+   	padding-bottom: 10px;
+}
+
+.loginContent {
+    margin: 0 0 15px 0;
+}
+
+button.clsloginBtn {
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 18px;
+    margin: 0;
+}
+
+.clsMasterLogin h3 {
+    padding: 0px 0 5px 0;
+    margin: 0px 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loginContent label.forgotPass, #backLogin {
+    float: right;
+    color: #0078d7;
+    cursor:pointer;
+    font-size:13px
+}
+
+.clearfix:after {
+	clear:both;
+	display:block;
+	content:''
+}
+
+.loginContent label {
+    padding: 0 0 5px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#changePasswordError {
+	padding-left: 10px;
+}

@@ -1,0 +1,115 @@
+#accordion table {
+    width: 94%;
+    margin: 20px;
+    border: 1px solid #ccc;
+	border-spacing: 0
+}
+
+#accordion table th {
+	background:#ccc;
+}
+
+.addComments {
+	margin: 20px;
+}
+
+.addComments textarea {
+	height: 70px;
+	width: 99%;
+}
+
+.historySection .clsRightVal {
+    float: right;
+     margin-right:2%;
+}
+
+.historySection h3::after,.historyCol::after {
+	clear:both;
+	content:'';
+	display:block;
+}
+
+#accordion.historySection .ui-accordion-content {
+	padding:15px;
+}
+
+.historyCol .historyColLeft {
+    width: 51%;
+    float: left;
+}
+
+.historyColLeft, .historyColRight {
+    padding: 0 0 10px 0;
+}
+
+.historyColRight {
+    width: 49%;
+    float: right;
+}
+
+.historyColLeft label, .historyColRight label {
+    width: 42%;
+    display: inline-block;
+    vertical-align:top;
+    font-weight:bold;
+}
+
+.historyColLeft span, .historyColRight span {
+    width: 55%;
+    display: inline-block;
+}   
+
+.panelRatingVal table {
+	margin:0;
+	width:70%%;
+}
+
+.panelRatingVal {
+    float: left;
+    width: 50%;
+}
+
+.selectionRating {
+    float: right;
+    width: 49%;
+}
+
+.selectionRating table {
+    margin: 0 0px 10px 0px;
+    width:70%;
+}
+
+#accordion table th, #accordion table td {
+    padding: 5px 5px;
+}
+
+.addComments {
+	margin:0 ;
+}
+
+.addComments h4 {
+    margin: 0px;
+    padding: 0px 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.addComments p {
+    margin: 0;
+    border: 1px solid #B0B0B0;
+    padding: 10px;
+    width: 95%;
+}
+
+.historySection h3 .headerPaneName {
+	display:block;
+	float:left;
+	width:24%;
+	margin-left:1%;
+}
+
+.historySection h3 .lastIntDate {
+	display: block;
+	float: left;
+	width: auto;
+}

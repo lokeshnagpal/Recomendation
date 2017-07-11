@@ -1,0 +1,131 @@
+#header {
+	background-color: #FFDF0E;
+	height: 45px;
+	width: 100%;
+}
+
+#menu-pane {
+	display: inline-block;
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 92%;
+    padding: 0;
+    vertical-align: top;
+    position: fixed;
+    border-right: 1px solid #dddddd;
+    overflow-y: hidden;
+}
+
+#content-pane {
+    display: inline-block;
+   	min-width: 500px;
+   	height: 85%;
+   	position: fixed;
+   	right: 0;
+   	top: 0;
+   	left: 250px;
+    margin-top: 50px;
+    vertical-align: top;
+    padding: 10px;
+    overflow: auto;
+}
+
+#content-pane .content {
+    padding: 0 20px;
+}
+
+#user-menu {
+    opacity: 0;
+}
+
+#content-pane > div > h2 {
+    margin: 0px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+#status-bar {
+	position: fixed;
+    top: 50px;
+    right: 5px;
+    margin-left: 5px;
+    z-index: 99;
+}
+
+.status {
+	padding: 15px;
+	width: 300px;
+	transition: visibility 2s 4s, opacity 3s linear;
+	margin-bottom: 3px;
+	color: #FFFFFF;
+	box-shadow: -4px 4px 3px rgba(0, 0, 0, .2);
+}
+
+.status.status-info {
+    background-color: #2266AA;
+}
+
+.status.status-info:hover {
+    background-color: #225599;
+}
+
+.status.status-success {
+    background-color: #246600;
+}
+
+.status.status-success:hover {
+    background-color: #245500;
+}
+
+.status.status-warning {
+    background-color: #A07300;
+}
+
+.status.status-warning:hover {
+    background-color: #876100;
+}
+
+.status.status-error {
+    background-color: #C42000;
+}
+
+.status.status-error:hover {
+	background-color: #AD1E01;
+}
+
+.status-msg {
+	display: inline-block;
+	vertical-align: top;
+  	padding-left: 5px;
+	width: 270px;
+    max-height: 60px;
+	overflow: hidden;
+}
+
+.status-img {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+ 	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	vertical-align: middle !important;
+}
+
+.status-img.status-success {
+	background-image:  url("/IBPortal/images/status-success.png");
+}
+
+.status-img.status-error {
+	background-image:  url("/IBPortal/images/status-error.png");
+}
+
+.status-img.status-info {
+	background-image:  url("/IBPortal/images/status-info.png");
+}
+
+.status-img.status-warning {
+	background-image:  url("/IBPortal/images/status-warning.png");
+}

@@ -1,0 +1,147 @@
+form.evalForm {
+	width: 650px;
+}
+
+.test {
+	float: left;
+	width: 160px;
+}
+
+#skillTable table td {
+	padding: 0px;
+}
+
+#skillTable tr td {
+	padding: 0px;
+	width: 160px;
+}
+
+button#skillId {
+	margin: 10px 0 0 0;
+}
+
+.addSkill {
+	margin: 0 10px 10px 0;
+}
+
+.addSkill label {
+	padding: 0 0 10px 0;
+}
+
+.addSkill select,.candidateInfo.skillLabel label {
+	width: 200px;
+	margin: 0 10px 0 0;
+}
+
+.addskill select {
+	padding: 5px 0px;
+}
+
+button#skillId {
+	margin: 0 0 10px 0;
+}
+
+button#candidateSubmit {
+	margin: 0 22px 0 0;
+	float: right;
+}
+
+.addSkill select,.skillLabel label {
+	width: 200px;
+	margin: 0 10px 0 0;
+	display: inline-block;
+	padding: 0 0 10px 0;
+	font-weight: bold;
+}
+
+.searchInput {
+	width: 200px;
+	margin: 0 10px 0 0;
+	padding: 5px 10px;
+}
+
+#create-candidate {
+	margin: 0 0 10px 0;
+}
+
+#options-table select {
+    width: 150px;
+    padding: 5px 10px;
+}
+
+.disabledVal {
+    background: #eee;
+}
+
+.questionList {
+    border: 1px dashed #aacdde;
+    background: #f3fafd;
+    padding:20px;
+    margin:0 0 10px 0
+}
+.questionList ul{
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+    list-style: none;
+}
+.questionList ul li {
+    padding: 10px 0px 10px 10px;
+    color: #000;
+}
+.questionList ul li input[type="radio"] {
+	vertical-align:top;   	
+    margin: 5px 10px 0px 5px;
+}
+
+.gender input, .gender span {
+    width: auto;
+    vertical-align: middle;
+}
+
+.gender {
+    display: inline-block;
+    height: 30px;
+}
+
+textarea#sComment {
+    width: 250px;
+    resize: none;
+    height: 70px;
+}
+
+.testRes span {
+    color: green;
+    padding: 0 0 0 20px;
+}
+
+.testRes {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#testResult {
+    text-align: center;
+}
+
+.form.no-margin {
+	margin: 0;
+}
+
+.form > div.experience > select {
+	width: 50px;
+}
+
+.form > div.experience > span {
+	padding-right: 10px;
+}
+
+.commonTableData td {
+	width: 20%; 
+	word-wrap:break-word;
+    table-layout: fixed;
+}
+
+
+
+.

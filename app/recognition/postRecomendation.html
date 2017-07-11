@@ -1,0 +1,63 @@
+
+
+    <!-- Sidebar -->
+    <!--<div id="sidebar-wrapper" class="">
+
+        <nav>
+            <ul class="sidebar-nav nav">
+                <li class="active"><a href="javascript:;">My Recomendation</a></li>
+                <li><a href="javascript:;">Post Recomendation</a></li>
+            </ul>
+        </nav>
+
+    </div>-->
+
+    <menu></menu>
+    <!-- Page content -->
+    <div id="page-content-wrapper" class="">
+
+        <div class="page-content inset">
+
+            <div class="row">
+                <div class="col-md-12 well">
+
+                    <form (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" id="title" [(ngModel)]="model.title" name="title">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="power">Category</label>
+                            <select class="form-control" id="Category" required [(ngModel)]="model.category" name="category">
+                            <option *ngFor="let cat of categories" [value]="cat">{{pow}}</option>
+                        </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" id="description" name="description" [(ngModel)]="model.description"></textarea>
+
+                        </div>
+
+                         <br>
+                             <button class="btn btn-primary" (click)="submit()">submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+

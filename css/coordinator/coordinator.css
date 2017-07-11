@@ -1,0 +1,41 @@
+.detailsContainer {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.candidateInfo {
+	padding: 10px;
+	border: 1px solid lightgray; 
+}
+
+.candidateInfo:hover {
+	cursor: pointer; 
+	background: lightgray;
+}
+
+.candidateInfo.selected {
+	background: #c9ddfc;
+}
+
+.candidateFiles {
+	padding: 0 20px 20px 20px;
+    border: 1px solid lightgray;
+}
+
+.filesContainer {
+	padding-bottom: 10px;
+}
+
+#fileToUpload, #candidateFile {
+	width: 0px;
+}
+
+.candidateTableContainer {
+	height: 200px;
+	overflow-y: auto;
+}
+
+.filesContainer {
+	max-height: 75px;
+	overflow-y: auto;
+}

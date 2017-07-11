@@ -812,6 +812,7 @@ button.detailsIcon, button.detailsIcon:focus {
   overflow-y: auto;
   z-index: 1000;
   transition: all 0.4s ease 0s;
+  margin-top: 5px;
 }
 
 #wrapper.active {
@@ -905,6 +906,7 @@ button.detailsIcon, button.detailsIcon:focus {
 
 .inset {
   padding: 20px;
+  margin-top:50px;
 }
 
 @media (max-width:767px) {

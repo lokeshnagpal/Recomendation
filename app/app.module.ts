@@ -2,7 +2,8 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {RouterModule,Routes,Router} from '@angular/router';
+import {RouterModule,Routes} from '@angular/router';
+import {CKEditorModule} from 'ng2-ckeditor';
 
 // used to create fake backend
 // import { fakeBackendProvider } from './_helpers/fake-backend';
@@ -14,12 +15,13 @@ import { MenuComponent } from './menu.component';
 import  {LoginComponent} from './login/login.component';
 import { MyRecomendation } from './recognition/myRecomendation';
 import { PostRecomendation } from './recognition/postRecomendation';
-
+import { ReviewRecomendation } from './recognition/recomendationReview.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent } ,   
   { path: 'myrecomendation', component: MyRecomendation } , 
-  { path: 'postrecomendation', component: PostRecomendation }  
+  { path: 'postrecomendation', component: PostRecomendation },
+  { path: "reviewrecomendation", component: ReviewRecomendation }   
 ];
 
 
@@ -28,16 +30,17 @@ const appRoutes: Routes = [
         BrowserModule,
         FormsModule,
         HttpModule,
-        RouterModule.forRoot(appRoutes)
-        
+        RouterModule.forRoot(appRoutes),
+        CKEditorModule
+                
     ],
     declarations: [
         AppComponent,
         MenuComponent,
         LoginComponent,
         MyRecomendation,
-        PostRecomendation
-        // HomeComponent
+        PostRecomendation,
+        ReviewRecomendation
     ],
     providers: [
       

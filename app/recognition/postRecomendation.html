@@ -1,52 +1,52 @@
+<!-- Sidebar -->
+<menu></menu>
+<!-- Page content -->
+<div id="page-content-wrapper" class="">
 
+    <div class="page-content inset">
 
-    <!-- Sidebar -->
-     <menu></menu>
-    <!-- Page content -->
-    <div id="page-content-wrapper" class="">
+        <div class="row">
+            <div class="col-md-12 well">
 
-        <div class="page-content inset">
+                <form #form="ngForm" (ngSubmit)="save()">
+                    <div class="form-group">
+                        <label>Name</label>                      
+                        <input type="text" class="form-control" id="name"  required name="name">
+                    </div>
 
-            <div class="row">
-                <div class="col-md-12 well">
-
-                    <form (ngSubmit)="onSubmit()">
-                        <div class="form-group">
-
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" required  name="name">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Title</label>
-                            <input type="text" class="form-control" id="title"  name="title">
-                        </div>
-
-
-                        <div class="form-group">
+                    <div class="row">
+                        <div class="form-group" class="col-md-6">
                             <label for="power">Category</label>
-                            <select class="form-control" id="Category" required  name="category">
-                            <option *ngFor="let cat of categories" [value]="cat">{{pow}}</option>
-                        </select>
+                            <select class="form-control" id="Category" required name="category">
+                                <option *ngFor="let cat of categories" [value]="cat">{{pow}}</option>
+                            </select>
 
                         </div>
 
-
-                        <div class="form-group">
-                            <label>Description</label>
-                            <textarea class="form-control" id="description" name="description" ></textarea>
-
+                        <div class="form-group" class="col-md-6">
+                            <label>Title</label>
+                            <input type="text" class="form-control" id="title" name="title">
                         </div>
+                  </div>
+                     <br>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <!--<textarea class="form-control" id="description" name="description"></textarea>-->
+                        <ckeditor [(ngModel)]="content"   name="content">
+                                 <p>Hello <strong>world</strong></p>                               
 
-                         <br>
-                             <button class="btn btn-primary" (click)="submit()">submit</button>
+                        </ckeditor>                                                 
+                        
+                    </div>
+                  
+                    <br>
+                    <button class="btn btn-primary" type="submit">next</button>
 
-                    </form>
-
-                </div>
+                </form>
+                  
             </div>
-
         </div>
+
+
     </div>
-
-
+</div>

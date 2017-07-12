@@ -7,7 +7,8 @@ var map = {
 	"@angular/platform-browser": "node_modules/@angular/platform-browser",
 	"@angular/platform-browser-dynamic": "node_modules/@angular/platform-browser-dynamic",
 	"@angular/http":"node_modules/@angular/http",
-	"@angular/router":"node_modules/@angular/router"
+	"@angular/router":"node_modules/@angular/router",
+	"ng2-ckeditor": "node_modules/ng2-ckeditor"
 };
 var packages = {
 	"rxjs": { "defaultExtension": "js" },
@@ -22,7 +23,11 @@ var packages = {
 	"app": {
 		main: './main.js',
 		defaultExtension: 'js'
-	}
+	},
+	"ng2-ckeditor": {
+        "main": "lib/index.js",
+        "defaultExtension": "js",
+      },
 };
 
 var config = {

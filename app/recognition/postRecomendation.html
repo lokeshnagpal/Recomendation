@@ -32,8 +32,8 @@
                     <div class="form-group">
                         <label>Description</label>
                         <!--<textarea class="form-control" id="description" name="description"></textarea>-->
-                        <ckeditor [(ngModel)]="content"   name="content">
-                                 <p>Hello <strong>world</strong></p>                               
+                        <ckeditor [(ngModel)]="content"   name="content"  [config]="{scayt_autoStartup :true}">
+                                 <p>Hello <strong>world</strong></p>                              
 
                         </ckeditor>                                                 
                         

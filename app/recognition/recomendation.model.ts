@@ -1,4 +1,4 @@
-export class Recomendation{
+export class Recognition{
     constructor(
         public name:string, 
         public category:string,

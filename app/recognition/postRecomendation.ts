@@ -1,9 +1,11 @@
 import {Component,OnInit} from '@angular/core';
 import {CKEditorModule} from 'ng2-ckeditor';
 import { Router } from '@angular/router';
-import {Recomendation} from './recomendation.model';
+import {Recognition} from './recomendation.model';
 import { RecognitionService} from './service';
- 
+import {Response} from '@angular/http'; 
+
+
 @Component({
     selector:'postrecomendation',
     templateUrl:'./app/recognition/postRecomendation.html'
@@ -12,12 +14,12 @@ import { RecognitionService} from './service';
 
 export class PostRecognition implements OnInit{
    content:any;
-   recom:Recomendation;
-   recomendations:Array<Recomendation>;
+   recog:Recognition;
+   recognitions:Array<Recognition>;
 
     constructor(private router:Router,private service:RecognitionService){
-         this.recom = new Recomendation('','','','<p>Hello <strong>World !</strong></p>')
-         this.recomendations = new Array<Recomendation>();
+         this.recog = new Recognition('','','','<p>Hello <strong>World !</strong></p>')
+         this.recognitions = new Array<Recognition>();
     }
 
     ngOnInit(){
@@ -27,7 +29,11 @@ export class PostRecognition implements OnInit{
 
     partialSave(){
         // console.log(this.content);       
-         this.service.saveRecomendation(this.recom);
-         this.router.navigate(['/reviewrecognition']);
+         this.service.saveRecomendation(this.recog)
+         .subscribe((resp:Response) => {
+             this.recog = resp.json();
+             this.router.navigate(['/reviewrecognition']);
+         });
+         
     }
 }

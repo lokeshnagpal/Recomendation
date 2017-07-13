@@ -16,6 +16,7 @@ import  {LoginComponent} from './login/login.component';
 import { MyRecomendation } from './recognition/myRecomendation';
 import { PostRecomendation } from './recognition/postRecomendation';
 import { ReviewRecomendation } from './recognition/recomendationReview.component';
+import {RecomendationService} from './recognition/service';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent } ,   
@@ -43,7 +44,7 @@ const appRoutes: Routes = [
         ReviewRecomendation
     ],
     providers: [
-      
+      RecomendationService
     ],
     bootstrap: [AppComponent]
 })

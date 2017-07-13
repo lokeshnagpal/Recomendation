@@ -1,6 +1,5 @@
 Software License Agreement
 ==========================
-
 CKEditor - The text editor for Internet - http://ckeditor.com
 Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
 

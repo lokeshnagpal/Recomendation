@@ -8,31 +8,33 @@
         <div class="row">
             <div class="col-md-12 well">
 
-                <form #form="ngForm" (ngSubmit)="save()">
+                <form #form="ngForm" (ngSubmit)="partialSave()">
                     <div class="form-group">
                         <label>Name</label>                      
-                        <input type="text" class="form-control" id="name"  required name="name">
+                        <input type="text" class="form-control" id="name" [(ngModel)]="recom.name"  required name="name">
                     </div>
 
                     <div class="row">
                         <div class="form-group" class="col-md-6">
                             <label for="power">Category</label>
-                            <select class="form-control" id="Category" required name="category">
-                                <option *ngFor="let cat of categories" [value]="cat">{{pow}}</option>
+                            <select [(ngModel)]="recom.category" class="form-control" id="Category" required name="category">
+                                <!--<option *ngFor="let cat of categories" >{{pow}}</option>-->
+                                <option> Business</option>
+                                <option> IT</option>
                             </select>
 
                         </div>
 
                         <div class="form-group" class="col-md-6">
                             <label>Title</label>
-                            <input type="text" class="form-control" id="title" name="title">
+                            <input type="text" class="form-control" id="title" [(ngModel)]="title" name="title">
                         </div>
                   </div>
                      <br>
                     <div class="form-group">
                         <label>Description</label>
                         <!--<textarea class="form-control" id="description" name="description"></textarea>-->
-                        <ckeditor [(ngModel)]="content"   name="content"  [config]="{scayt_autoStartup :true}">
+                        <ckeditor [(ngModel)]="recom.description"   name="description"  [config]="{scayt_autoStartup :true}">
                                  <p>Hello <strong>world</strong></p>                              
 
                         </ckeditor>                                                 

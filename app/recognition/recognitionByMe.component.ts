@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector:'myrecomendation',
-    templateUrl:'./app/recognition/myRecomendation.html'
+    templateUrl:'./app/recognition/recognitionByMe.html'
 })
 
-export class MyRecognition{}
+export class RecognitionByMe{}

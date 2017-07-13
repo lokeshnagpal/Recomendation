@@ -3,7 +3,7 @@ import {Recomendation} from './recomendation.model';
 
 
 @Injectable()
-export class RecomendationService {
+export class RecognitionService {
     
     constructor() {
 

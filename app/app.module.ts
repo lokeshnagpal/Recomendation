@@ -13,16 +13,18 @@ import {CKEditorModule} from 'ng2-ckeditor';
 import { AppComponent }  from './app.component';
 import { MenuComponent } from './menu.component';
 import  {LoginComponent} from './login/login.component';
-import { MyRecomendation } from './recognition/myRecomendation';
-import { PostRecomendation } from './recognition/postRecomendation';
-import { ReviewRecomendation } from './recognition/recomendationReview.component';
-import {RecomendationService} from './recognition/service';
+import { MyRecognition } from './recognition/myRecomendation';
+import { PostRecognition } from './recognition/postRecomendation';
+import { ReviewRecognition} from './recognition/recomendationReview.component';
+import { RecognitionByMe} from './recognition/recognitionByMe.component';
+import {RecognitionService} from './recognition/service';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent } ,   
-  { path: 'myrecomendation', component: MyRecomendation } , 
-  { path: 'postrecomendation', component: PostRecomendation },
-  { path: "reviewrecomendation", component: ReviewRecomendation }   
+  { path: 'myrecognition', component: MyRecognition } , 
+  { path: 'postrecognition', component: PostRecognition },
+  { path: "reviewrecognition", component: ReviewRecognition },
+  { path: "recognitionbyme", component: RecognitionByMe }      
 ];
 
 
@@ -39,12 +41,13 @@ const appRoutes: Routes = [
         AppComponent,
         MenuComponent,
         LoginComponent,
-        MyRecomendation,
-        PostRecomendation,
-        ReviewRecomendation
+        MyRecognition,
+        PostRecognition,
+        ReviewRecognition,
+        RecognitionByMe
     ],
     providers: [
-      RecomendationService
+      RecognitionService
     ],
     bootstrap: [AppComponent]
 })

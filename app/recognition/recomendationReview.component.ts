@@ -6,9 +6,9 @@ import { Router } from "@angular/router";
    templateUrl:'./app/recognition/recomedationReview.html'
 })
 
-export class ReviewRecomendation{
+export class ReviewRecognition{
     constructor(private router:Router){}
     update(){
-      this.router.navigate(['/postrecomendation']);
+      this.router.navigate(['/postrecognition']);
     }
 }
